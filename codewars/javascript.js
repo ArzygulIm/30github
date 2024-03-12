@@ -134,3 +134,5 @@ function expandedForm(num) {
 function solution(str){
   return str.split('').reverse().join('')
 }
+
+//9
