@@ -141,3 +141,13 @@ function solution(str){
 // The next number in having this property is 135
 // See this property again: 
 // 135 =1^1+3^2+5^3
+
+function sumDigPow(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    if (i === i.toString().split('').reduce((sum, digit, index) => sum + Math.pow(Number(digit), index + 1), 0)) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
