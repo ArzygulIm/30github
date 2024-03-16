@@ -151,3 +151,17 @@ function sumDigPow(a, b) {
   }
   return arr;
 }
+
+
+function filterFunc(n) {
+  return `${n}`.split("").map((x, i) => x ** (i+1)).reduce((a, b) => a+b) == n;
+}
+
+function *range(a, b) {
+  for (var i = a; i <= b; ++i) yield i;
+}
+
+function sumDigPow(a, b) {
+  return Array.from(range(a, b)).filter(filterFunc);
+}
+
