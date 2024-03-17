@@ -165,3 +165,6 @@ function sumDigPow(a, b) {
   return Array.from(range(a, b)).filter(filterFunc);
 }
 
+function sumDigPow(a, b) {
+  return Array(b-a+1).fill().map(() => a++).filter(val => val.toString().split('').map(x => parseInt(x)).reduce((total, v, i) => total + v ** (i+1)) == val);
+}
