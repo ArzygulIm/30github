@@ -9,12 +9,10 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
-# Клавиатура
 menu_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 menu_keyboard.add(KeyboardButton("🎁 Подарки"), KeyboardButton("👕 Мерч"))
 menu_keyboard.add(KeyboardButton("📦 Оформить заказ"))
 
-# Товары
 products = {
     "🎁 Подарки": [
         {"name": "Мягкая игрушка", "price": "500 руб", "photo": "toy.jpg"},
