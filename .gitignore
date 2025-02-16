@@ -1,0 +1,25 @@
+# Игнорируем виртуальное окружение
+env/
+venv/
+
+# Игнорируем кэш Python
+__pycache__/
+*.py[cod]
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
+
+# Игнорируем файлы Excel (если не нужно хранить их в репозитории)
+*.xlsx
+*.xls
+
+# Конфигурации IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Файлы зависимостей и кэша pip
+pip-wheel-metadata/
+*.egg-info/
