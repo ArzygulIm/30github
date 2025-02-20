@@ -20,6 +20,8 @@ class Item(BaseModel):
     id: int
     name: str
     description: str = None
+    status: boolean = false
+    date: str
 
 def save_to_excel():
     pd.DataFrame(items).to_excel(EXCEL_FILE, index=False)
