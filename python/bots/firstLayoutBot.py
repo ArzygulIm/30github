@@ -13,7 +13,8 @@ menu_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 menu_keyboard.add(KeyboardButton("🎁 Подарки"), KeyboardButton("👕 Мерч"))
 menu_keyboard.add(KeyboardButton("📦 Оформить заказ"))
 
-products = {
+products ={
+"Наборы":[],
     "🎁 Подарки": [
         {"name": "Мягкая игрушка", "price": "500 руб", "photo": "toy.jpg"},
         {"name": "Шоколадный набор", "price": "300 руб", "photo": "chocolate.jpg"}
