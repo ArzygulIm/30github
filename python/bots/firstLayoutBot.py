@@ -10,7 +10,7 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 menu_keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-menu_keyboard.add(KeyboardButton("🎁 Подарки"), KeyboardButton("👕 Мерч"))
+menu_keyboard.add(KeyboardButton("🎁 Подарки"), KeyboardButton("👕 Мерч"), Keyboard Button("Наборы"))
 menu_keyboard.add(KeyboardButton("📦 Оформить заказ"))
 
 products ={
