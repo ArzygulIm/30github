@@ -25,20 +25,19 @@ function isIsogram(str) {
 
 //2
 
-Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
-For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
 function squareDigits(n) {
   return +([...String(n)].map(d => d ** 2).join(''));
 }
 
 //3
-Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him.
+// Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him.
 
-Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message:
-
-If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
-If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+// Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message:
+// If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+// If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
 const hoopCount = (n) => n >= 10
      ? 'Great, now move on to tricks'
@@ -46,7 +45,7 @@ const hoopCount = (n) => n >= 10
 
 //4
 
-Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+// Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
 
 function powersOfTwo(n){
   let arr=[]
@@ -66,9 +65,8 @@ function powersOfTwo(n) {
 
 //5
 
-Simple, given a string of words, return the length of the shortest word(s).
-
-String will never be empty and you do not need to account for different data types.
+// Simple, given a string of words, return the length of the shortest word(s).
+// String will never be empty and you do not need to account for different data types.
 
 function findShort(s){
   let arr=s.split(' ')
@@ -96,16 +94,13 @@ const findShort = (s) => s
   .length;
 
 //6
-Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
-
-This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
-
-This function should return a number (final grade). There are four types of final grades:
-
-100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
-90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
-75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
-0, in other cases
+// Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
+// This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
+// This function should return a number (final grade). There are four types of final grades:
+// 100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
+// 90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
+// 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
+// 0, in other cases
 
 
 function finalGrade(exam, projects) {
