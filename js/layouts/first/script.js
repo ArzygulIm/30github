@@ -6,3 +6,9 @@ document.getElementById('burger').classList.toggle = 'show-nav'
 
 }
 
+const mainCarousel = () => {
+    const slides = document.querySelectorAll("popular-carousel__carousel__item")
+    
+}
+mainCarousel()
+
