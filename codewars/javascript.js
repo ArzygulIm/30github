@@ -168,3 +168,10 @@ function sumDigPow(a, b) {
 function sumDigPow(a, b) {
   return Array(b-a+1).fill().map(() => a++).filter(val => val.toString().split('').map(x => parseInt(x)).reduce((total, v, i) => total + v ** (i+1)) == val);
 }
+
+//10
+//Implement a function which convert the given boolean value into its string representation.
+
+function booleanToString(b){
+  return b?"true":"false"
+}
